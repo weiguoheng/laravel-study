@@ -23,7 +23,7 @@ class ThirdController extends Controller
      */
     public function create()
     {
-        //
+        echo 'this is third';
     }
 
     /**
