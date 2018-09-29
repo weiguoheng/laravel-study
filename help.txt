@@ -20,3 +20,12 @@ php artisan make:migration create_books_table --create=books    创建数据库�
 
 php artisan make:migration add_author_field_into_books_table --table=books     创建更新数据库的文件
 
+php artisan make:command commandName    创建脚本
+新建脚本后，在  protected $signature = 'command:wechat' 定义执行脚本的名称
+php artisan command:commandName     执行脚本
+
+php artisan make:seeder UserTableSeeder 创建seeder
+在seeder中编写要写入的数据库内容
+php artisan db:seed         执行文件seeder操作
+
+php artisan migrate:refresh --seed      清空数据库，执行seeder操作
