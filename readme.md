@@ -29,3 +29,9 @@ php artisan make:seeder UserTableSeeder 创建seeder
 php artisan db:seed         执行文件seeder操作
 
 php artisan migrate:refresh --seed      清空数据库，执行seeder操作
+
+
+-----------------------------------------------------------------------------------------------
+入口文件指向laravel/public，报错403
+apache报错log：Options FollowSymLinks and SymLinksIfOwnerMatch are both off, so the RewriteRule directive is also forbidden due to its similar ability to circumvent directory restrictions
+解决方案：public/.htaccess   加Options +FollowSymLinks +SymLinksIfOwnerMatch
