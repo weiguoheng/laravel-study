@@ -5,7 +5,9 @@ oo long; max key length is 767 bytes (SQL: alter table `users` add unique `
 users_email_unique`(`email`))
 
 在app/Providers/AppServiceProvider.php
-boot方法下新增：Schema::defaultStringLength(191);
+boot方法下新增：   
+use Illuminate\Support\Facades\Schema;   
+Schema::defaultStringLength(191);
 
 -----------------------------------------------------------------------------------------------
 php artisan make:auth   创建用户系统，views会新增模板，路由会多一个home路由
