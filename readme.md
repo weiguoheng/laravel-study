@@ -1,4 +1,4 @@
-php artisan migrate     创建数据库，确保数据库已存在，读取database目录下的migrations来创建数据库
+php artisan migrate     创建数据表，确保数据库已存在，读取database目录下的migrations来创建数据库
 
 如果报错：SQLSTATE[42000]: Syntax error or access violation:1071 Specified key was t
 oo long; max key length is 767 bytes (SQL: alter table `users` add unique `
